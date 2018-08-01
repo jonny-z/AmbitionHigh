@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {include file="template/template_head"}
+    <title>Login Demo</title>
+</head>
+<body>
+<div class="layui-layout-admin" id="login">
+    <div class="login-inner">
+        <div class="login-content">
+            <span class="login-content-left"></span>
+            <form id="form" target="rfFrame">
+                <dl>
+                    <dt>Login Demo</dt>
+                    <dd>
+                        <label for="username">
+                            <span><i class="fa fa-user"></i></span>
+                            <div class="layui-input-inline">
+                                <input type="text" name="username" id="username" required  lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                            </div>
+                        </label>
+                    </dd>
+                    <dd>
+                        <label for="password">
+                            <span><i class="fa fa-key"></i></span>
+                            <div class="layui-input-inline">
+                                <input type="password" name="password" id="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                            </div>
+                        </label>
+                    </dd>
+                    <dd>
+                        <p>
+                            <button type="button" id="signup">
+                                <a href="#small-dialog" class="popup-with-zoom-anim" style="color: white">Sign Up</a>
+                            </button>
+                            <button type="submit">Sign In</button>
+                        </p>
+                    </dd>
+                </dl>
+            </form>
+            <iframe style="display: none" id="rfFrame"  name="rfFrame" src="about:blank"></iframe>
+        </div>
+    </div>
+</div>
+<div id="small-dialog" class="mfp-hide w3ls_small_dialog wthree_pop">
+    <div class="agileits_modal_body">
+        <!--<iframe src="/Index/signup" scrolling="no"></iframe>-->
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+            fixedContentPos: false,
+            fixedBgPos: true,
+            overflowY: 'auto',
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+    });
+</script>
+
+<script>
+    $("#form").submit(function () {
+        $.ajax({
+            type:'post',
+            url:'{:url("index/login/login")}',
+            data:{username:$("#username").val(),password:$("#password").val()},
+            success:function (res) {
+                console.log(res.url);
+                if(res.code == 1) {
+
+                    //window.location.href = res.url;
+                }
+
+            },error:function (msg) {
+                console.log(msg);
+            }
+        })
+    });
+</script>
+</body>
+</html>
