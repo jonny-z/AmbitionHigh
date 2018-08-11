@@ -7,7 +7,7 @@ class Index extends Controller{
         Session::start();
         $uname = Session::get('uname');
         if(!$uname) {
-            $this->redirect('./Login/index');
+            $this->redirect('index/login/index');
             return;
         }
         $this->assign('user', $uname);
