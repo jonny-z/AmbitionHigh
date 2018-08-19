@@ -1,0 +1,366 @@
+html {
+    width: 100%;
+    height: 100%; }
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #646464;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; }
+
+a {
+    font-size: 14px;
+    color: #646464;
+    text-decoration: none;
+    cursor: pointer; }
+a:link, a:visited, a:active {
+    color: #646464; }
+a:hover, a:focus {
+    color: #2bb0d4;
+    text-decoration: none;
+    outline: none; }
+a, a button, a input, a textarea {
+    -webkit-tap-highlight-color: transparent; }
+
+.fl {
+    float: left !important; }
+
+.fr {
+    float: right !important; }
+
+.tl {
+    text-align: left; }
+
+.tr {
+    text-align: right; }
+
+.tc {
+    text-align: center; }
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important; }
+
+.show {
+    display: block !important; }
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0; }
+
+.placeholder {
+    color: #a9a9a9; }
+
+.col-sub, .col-extra {
+    float: left;
+    display: inline; }
+
+.col-main {
+    float: left;
+    width: 100%;
+    min-height: 1px; }
+
+/* Clearfix */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+.clearfix:after {
+    clear: both; }
+
+.layui-layout-admin {
+    width: 100%;
+    height: 100%; }
+.layui-layout-admin#login {
+    background-color: #eaedf2; }
+.layui-layout-admin#login .login-inner {
+    position: relative;
+    width: 61.12%;
+    height: 100%;
+    margin-left: 38.88%;
+    background-color: #2bb0d4; }
+.layui-layout-admin#login .login-inner .login-content {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    width: 480px;
+    height: 300px;
+    margin-top: -150px;
+    background-color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px; }
+.layui-layout-admin#login .login-inner .login-content .login-content-left {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 300px;
+    background-color: #393d49;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
+    -ms-border-radius: 15px 0 0 15px;
+    border-radius: 15px 0 0 15px; }
+.layui-layout-admin#login .login-inner .login-content dl {
+    position: relative;
+    z-index: 2;
+    padding: 30px 50px 30px 30px; }
+.layui-layout-admin#login .login-inner .login-content dl dt {
+    padding-left: 80px;
+    font-size: 36px;
+    color: #2bb0d4; }
+.layui-layout-admin#login .login-inner .login-content dl dd {
+    padding-top: 28px;
+    overflow: hidden; }
+.layui-layout-admin#login .login-inner .login-content dl dd span {
+    float: left;
+    padding-top: 8px; }
+.layui-layout-admin#login .login-inner .login-content dl dd span i {
+    font-size: 26px;
+    color: #c2c2c0; }
+.layui-layout-admin#login .login-inner .login-content dl dd .layui-input-inline {
+    float: right; }
+.layui-layout-admin#login .login-inner .login-content dl dd .layui-input-inline .layui-input {
+    width: 320px; }
+.layui-layout-admin#login .login-inner .login-content dl dd p {
+    text-align: right; }
+.layui-layout-admin#login .login-inner .login-content dl dd p button {
+    padding: 0 38px;
+    line-height: 38px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-color: #2bb0d4; }
+.layui-layout-admin .layui-side {
+    top: 0;
+    width: 80px; }
+.layui-layout-admin .layui-side .layui-nav-tree {
+    width: 60px; }
+.layui-layout-admin .layui-side .layui-nav-tree .layui-nav-item a {
+    padding: 15px 0;
+    width: 80px;
+    height: auto;
+    line-height: 1;
+    font-size: 12px;
+    text-align: center; }
+.layui-layout-admin .layui-side .layui-nav-tree .layui-nav-item a span {
+    display: block;
+    margin-bottom: 10px; }
+.layui-layout-admin .layui-side .layui-nav-tree .layui-nav-item a span i {
+    font-size: 24px; }
+.layui-layout-admin .layui-side .layui-nav-tree .layui-nav-item.layui-this a {
+    background-color: #2bb0d4; }
+.layui-layout-admin .layui-side .layui-nav-tree .layui-nav-bar {
+    display: none; }
+.layui-layout-admin .layui-menu {
+    position: fixed;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    width: 180px;
+    overflow-x: hidden;
+    background-color: #eaedf1; }
+.layui-layout-admin .layui-menu .admin-menu-main {
+    width: 180px; }
+.layui-layout-admin .layui-menu .admin-menu-main li a {
+    display: block;
+    padding: 0 20px;
+    color: #333;
+    line-height: 45px; }
+.layui-layout-admin .layui-menu .admin-menu-main li a:hover {
+    background-color: #f4f6f8; }
+.layui-layout-admin .layui-menu .admin-menu-main li a.active {
+    background-color: #fff; }
+.layui-layout-admin .layui-menu .admin-menu-main li .layui-menu-child {
+    display: block; }
+.layui-layout-admin .layui-menu .admin-menu-main li .layui-menu-child dd a {
+    color: #666;
+    text-indent: 1em; }
+.layui-layout-admin .layui-menu .admin-menu-main li.top {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #f1f1f1;
+    background-color: #f1f1f1; }
+.layui-layout-admin .layui-menu .admin-menu-main li.sub a {
+    font-size: 12px;
+    line-height: 35px; }
+.layui-layout-admin .layui-menu .admin-menu-main li.sub a span {
+    color: #aaa; }
+.layui-layout-admin .layui-body {
+    left: 90px;
+    top: 0;
+    bottom: 0;
+    overflow: hidden; }
+
+.layui-layout-main {
+    padding: 15px; }
+.layui-layout-main .toolbar {
+    padding: 10px 0; }
+.layui-layout-main .toolbar li {
+    float: left;
+    width: 60px; }
+.layui-layout-main .toolbar li a {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    text-align: center; }
+.layui-layout-main .toolbar li a i {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 30px;
+    color: #2bb0d4; }
+.layui-layout-main .layui-tab-title {
+    margin-bottom: 12px; }
+.layui-layout-main .layui-tab-title .layui-this a {
+    color: #2bb0d4; }
+.layui-layout-main .layui-table .layui-btn {
+    color: #fff; }
+.layui-layout-main .layout-inner {
+    position: relative; }
+.layui-layout-main .layout-inner .col-main .main-wrap {
+    margin-right: 330px; }
+.layui-layout-main .layout-inner .col-sub {
+    width: 310px;
+    margin-left: -310px;
+    position: fixed; }
+.layui-layout-main .layout-inner .col-sub .layui-field-title {
+    margin: 10px; }
+.layui-layout-main .layout-inner .col-sub .layui-field-title legend {
+    font-size: 14px; }
+.layui-layout-main .layout-inner .admin-site-upgal {
+    color: #fff;
+    text-align: center;
+    background-color: #2bb0d4; }
+.layui-layout-main #pages {
+    text-align: center; }
+.layui-layout-main .admin-site-upload,
+.layui-layout-main .admin-site-upload img {
+    width: 150px;
+    height: 150px; }
+.layui-layout-main .admin-site-upload {
+    position: relative;
+    margin: 0 auto 10px; }
+.layui-layout-main .admin-site-upload .admin-site-upbar {
+    margin: -90px 0 0 15px;
+    color: #fff;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    opacity: .6;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    background-color: #000; }
+.layui-layout-main .site-block-sub {
+    border-width: 5px 1px 1px 1px;
+    border-left-color: #e2e2e2; }
+.layui-layout-main .img_box {
+    width: 720px;
+    padding: 10px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+    min-height: 200px; }
+.layui-layout-main .img_box .list-gallery {
+    float: left;
+    width: 218px;
+    margin: 0 5px 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative; }
+.layui-layout-main .img_box .list-gallery .img_info {
+    display: block;
+    margin: auto;
+    padding: 5px 5px 0;
+    text-align: center; }
+.layui-layout-main .img_box .list-gallery .img_info img {
+    width: 208px;
+    height: 180px; }
+.layui-layout-main .img_box .list-gallery .img_info figcaption p {
+    margin: 3px 0;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+.layui-layout-main .img_box .list-gallery .img_info figcaption p .input_txt {
+    border: 1px solid #ccc;
+    padding: 0 10px;
+    height: 20px;
+    line-height: 20px; }
+.layui-layout-main .img_box .list-gallery .img_info figcaption p .input_txt.input_sort {
+    width: 60px; }
+.layui-layout-main .img_box .list-gallery .img_ctrl {
+    text-align: center;
+    display: block; }
+.layui-layout-main .img_box .list-gallery .img_ctrl button {
+    margin: 0; }
+.layui-layout-main .img_box .list-gallery .img_desc, .layui-layout-main .img_box .list-gallery .img_name, .layui-layout-main .img_box .list-gallery .img_sort {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 2; }
+.layui-layout-main .img_box .list-gallery .img_desc input, .layui-layout-main .img_box .list-gallery .img_name input, .layui-layout-main .img_box .list-gallery .img_sort input {
+    width: 324px;
+    margin-bottom: 10px; }
+.layui-layout-main .img_box .list-gallery .img_desc textarea, .layui-layout-main .img_box .list-gallery .img_name textarea, .layui-layout-main .img_box .list-gallery .img_sort textarea {
+    width: 324px;
+    height: 192px;
+    margin-bottom: 10px; }
+
+.list-info li {
+    line-height: 30px; }
+.list-info li span {
+    display: inline-block;
+    margin-right: 20px;
+    width: 100px;
+    text-align: right; }
+
+.layui-table .input_txt {
+    padding: 0 3px;
+    width: 24px;
+    line-height: 20px;
+    border: 1px solid #ccc; }
+
+.layui-btn {
+    background-color: #2bb0d4; }
+.layui-btn.layui-btn-danger {
+    background-color: #f92244; }
+.layui-btn.btn-back {
+    background: none; }
+.layui-btn.btn-back:hover {
+    border: 1px solid #cecece; }
+.layui-btn.layui-btn-primary, .layui-btn.gallery-del, .layui-btn.gallery-edit {
+    background: none; }
+.layui-btn.layui-btn-primary:hover, .layui-btn.gallery-del:hover, .layui-btn.gallery-edit:hover {
+    border-color: #cecece; }
+
+.btn_upload_gallery-button {
+    padding-left: 65px;
+    margin-bottom: 15px; }
+
+.layui-elem-quote {
+    border-left-color: #2bb0d4; }
+
+.list-input .layui-form-checkbox {
+    margin-bottom: 10px; }
+/*# sourceMappingURL=Style.css.map */
